@@ -4,7 +4,7 @@ Create a virtual environment with Python 3.9.5 and activate it:
 
 ```bash
 # For Windows 10 PowerShell (with already installed Python 3.9.5 interpreter)
-py -3.9.5 -m venv "venv"
+py -3.9 -m venv "venv"
 .\venv\Scripts\activate
 
 # For Ubuntu 20.04 Bash
@@ -31,7 +31,7 @@ Install dependencies while virtual environment is active:
 pip install -r requirements.txt
 
 # or (This might cause version problems)
-pip install requests beautifulsoup4 openpyxl xlsxwriter numpy wget
+pip install requests beautifulsoup4 python-dateutil openpyxl xlsxwriter numpy wget
 ```
 
 How to run (while virtual environment is active):
