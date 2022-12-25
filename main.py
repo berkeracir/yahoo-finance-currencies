@@ -9,7 +9,7 @@ if __name__ == "__main__":
     create_excel_file(currencies)   # create an excel file with currencies
 
     N = NUMBER_OF_CURRENCIES
-    headings = currencies.keys()
+    headings = list(currencies.keys())
 
     for index in np.argsort(currencies[headings[-1]])[::-1][:N]: # sort '% Change' values and obtain indices of the highest ones
         symbol = currencies[headings[0]][index]

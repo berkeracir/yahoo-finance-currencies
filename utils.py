@@ -40,7 +40,7 @@ def get_currencies() -> dict():
 def create_excel_file(currencies: dict) -> None:
     '''Creates an Excel file with scraped currency information from Yahoo Finance Currencies'''
 
-    headings = currencies.keys()
+    headings = list(currencies.keys())
 
     output_folder = OUTPUT_FOLDER_NAME
     excel_filename = EXCEL_FILE_NAME
